@@ -21,7 +21,11 @@
         android:id="@+id/notificationFragment"
         android:name="com.example.myapp.old.desktop.notificationFragment"
         android:label="fragment_notification"
-        tools:layout="@layout/fragment_notification" />
+        tools:layout="@layout/fragment_notification" >
+        <action
+            android:id="@+id/action_notificationFragment_to_detailActivitiesFragment"
+            app:destination="@id/detailActivitiesFragment" />
+    </fragment>
     <fragment
         android:id="@+id/goOutFragment"
         android:name="com.example.myapp.old.desktop.goOutFragment"
@@ -36,4 +40,9 @@
         android:name="com.example.myapp.old.desktop.attendGoOutFragment"
         android:label="fragment_attend_go_out"
         tools:layout="@layout/fragment_attend_go_out" />
+    <fragment
+        android:id="@+id/detailActivitiesFragment"
+        android:name="com.example.myapp.old.desktop.detailActivitiesFragment"
+        android:label="fragment_detail_activities"
+        tools:layout="@layout/fragment_detail_activities" />
 </navigation>

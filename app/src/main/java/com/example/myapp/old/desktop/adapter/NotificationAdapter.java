@@ -8,9 +8,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myapp.old.R;
+import com.example.myapp.old.desktop.goOutFragmentDirections;
+import com.example.myapp.old.desktop.notificationFragmentDirections;
 
 public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapter.NotifyViewHolder> {
 
@@ -51,6 +54,14 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         holder.textPerson.setText(data1[position]);
         holder.textActivity.setText(data2[position]);
         holder.imagePerson.setImageResource(images[position]);
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(notificationFragmentDirections.actionNotificationFragmentToDetailActivitiesFragment());
+            }
+
+        });
     }
 
     @Override

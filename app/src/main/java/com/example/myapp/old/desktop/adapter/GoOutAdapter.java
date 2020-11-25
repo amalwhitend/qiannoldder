@@ -46,7 +46,7 @@ public class GoOutAdapter extends RecyclerView.Adapter<GoOutAdapter.GoOutViewHol
             public void onClick(View view) {
 
                 Navigation.findNavController(view).navigate(goOutFragmentDirections.actionGoOutFragmentToAttendGoOutFragment());
-
+                
             }
 
         });

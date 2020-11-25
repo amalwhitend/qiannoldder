@@ -23,6 +23,7 @@
                 android:id="@+id/goout_gooutimages"
                 android:layout_width="112dp"
                 android:layout_height="112dp"
+                android:scaleType="fitXY"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"

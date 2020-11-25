@@ -3,6 +3,6 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
-    <color name="bkgd_yellow">#E9E6B44F</color>
+    <color name="bkgd_yellow">#FFC75A</color>
     <color name="tv_bkgd_dark_yellow">#8B6914</color>
 </resources>
