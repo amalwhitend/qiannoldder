@@ -4,13 +4,17 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myapp.old.R;
+import com.example.myapp.old.desktop.desktopFragmentDirections;
+import com.example.myapp.old.desktop.goOutFragmentDirections;
 
 public class GoOutAdapter extends RecyclerView.Adapter<GoOutAdapter.GoOutViewHolder> {
     String[] goOutActivities;
@@ -36,6 +40,16 @@ public class GoOutAdapter extends RecyclerView.Adapter<GoOutAdapter.GoOutViewHol
         String activity = (position+1) +" "+goOutActivities[position];
         holder.text_goOutActivities.setText(activity);
         holder.image_gooutImages.setImageResource(goOutimages[position]);
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Navigation.findNavController(view).navigate(goOutFragmentDirections.actionGoOutFragmentToAttendGoOutFragment());
+
+            }
+
+        });
     }
 
     @Override

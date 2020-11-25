@@ -14,12 +14,13 @@
         android:background="@color/bkgd_yellow">
 
         <ImageView
-            android:id="@+id/notify_iv"
+            android:id="@+id/desktop_notify_iv"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginTop="64dp"
             android:src="@android:drawable/ic_popup_reminder"
+            app:layout_constraintBottom_toTopOf="@+id/desktop_phone_iv"
             app:layout_constraintEnd_toEndOf="@id/guideline"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,9 +28,10 @@
             android:id="@+id/desktop_goout_iv"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginTop="64dp"
             android:src="@android:drawable/ic_menu_myplaces"
+            app:layout_constraintBottom_toTopOf="@+id/desktop_camera_iv"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="@id/guideline"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,6 +44,27 @@
             app:layout_constraintGuide_begin="219dp"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/desktop_phone_iv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@android:drawable/stat_sys_phone_call_forward"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/desktop_camera_iv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@android:drawable/ic_menu_camera"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

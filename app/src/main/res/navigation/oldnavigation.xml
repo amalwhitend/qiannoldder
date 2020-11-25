@@ -26,5 +26,14 @@
         android:id="@+id/goOutFragment"
         android:name="com.example.myapp.old.desktop.goOutFragment"
         android:label="fragment_go_out"
-        tools:layout="@layout/fragment_go_out" />
+        tools:layout="@layout/fragment_go_out" >
+        <action
+            android:id="@+id/action_goOutFragment_to_attendGoOutFragment"
+            app:destination="@id/attendGoOutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/attendGoOutFragment"
+        android:name="com.example.myapp.old.desktop.attendGoOutFragment"
+        android:label="fragment_attend_go_out"
+        tools:layout="@layout/fragment_attend_go_out" />
 </navigation>

@@ -10,14 +10,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.myapp.old.R;
-//import com.example.myapp.old.desktopFragmentDirections;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link desktopFragment#newInstance} factory method to
+ * Use the {@link attendGoOutFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class desktopFragment extends Fragment {
+public class attendGoOutFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -28,7 +27,7 @@ public class desktopFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public desktopFragment() {
+    public attendGoOutFragment() {
         // Required empty public constructor
     }
 
@@ -38,11 +37,11 @@ public class desktopFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment desktopFragment.
+     * @return A new instance of fragment attendGoOutFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static desktopFragment newInstance(String param1, String param2) {
-        desktopFragment fragment = new desktopFragment();
+    public static attendGoOutFragment newInstance(String param1, String param2) {
+        attendGoOutFragment fragment = new attendGoOutFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -63,15 +62,8 @@ public class desktopFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View root = inflater.inflate(R.layout.fragment_desktop, container, false);
+        View view = inflater.inflate(R.layout.fragment_attend_go_out, container, false);
 
-        root.findViewById(R.id.desktop_notify_iv).setOnClickListener(v->{
-            Navigation.findNavController(v).navigate(desktopFragmentDirections.actionDesktopFragmentToNotificationFragment());
-        });
-        root.findViewById(R.id.desktop_goout_iv).setOnClickListener(view -> {
-            Navigation.findNavController(view).navigate(desktopFragmentDirections.actionDesktopFragmentToGoOutFragment());
-        });
-
-        return root;
+        return view;
     }
 }
