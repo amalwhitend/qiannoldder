@@ -49,6 +49,31 @@
     <string name="painting">繪 畫</string>
     <string name="dancing">舞 蹈</string>
     <string name="title_activity_general">GeneralActivity</string>
+    <string name="next">下一步</string>
+    <string name="phonenum">電話：</string>
+    <string name="passw">密碼：</string>
+    <string name="passw2">確認密碼：</string>
+    <string name="name">姓名：</string>
+    <string name="btithd">生日：</string>
+    <string name="bg">性別：</string>
+    <string name="i_boy">男</string>
+    <string name="i_girl">女</string>
+    <string name="register_title">註冊</string>
+    <string name="illness_titel">疾病史</string>
+    <string name="illness1">抑鬱症</string>
+    <string name="illness2">認知障礙症</string>
+    <string name="illness3">糖尿病</string>
+    <string name="illness4">高血壓</string>
+    <string name="illness5">冠心病</string>
+    <string name="illness6">中風</string>
+    <string name="illness7">慢性阻塞性氣管病</string>
+    <string name="illness8">柏金遜症</string>
+    <string name="illness9">腎衰竭</string>
+    <string name="illness10">骨質疏鬆</string>
+    <string name="illness11">低溫症</string>
+    <string name="illness12">腸道傳染病</string>
+    <string name="illness13">流行性感冒</string>
+    <string name="illness14">痔瘡</string>
     <!--
     This string is used for square devices and overridden by hello_world in
     values-round/strings.xml for round devices.

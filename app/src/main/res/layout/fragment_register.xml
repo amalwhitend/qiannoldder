@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register"
+    android:background="@color/bkgd_yellow">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/register_title"
+        android:textSize="40sp" />
+    <ImageView
+        android:id="@+id/l"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/logal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="70dp"
+        android:text="@string/phonenum"
+        android:textSize="25sp"
+        android:inputType="phone"
+        tools:ignore="TextViewEdits" />
+    <EditText
+        android:id="@+id/my_phonenumber"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginStart="160dp"
+        android:background="@color/cardview_light_background"
+        android:autofillHints="@string/passw"
+        android:inputType="textPassword"
+        tools:ignore="LabelFor,TextFields" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="310dp"
+        android:layout_marginStart="70dp"
+        android:text="@string/passw"
+        android:textSize="25sp"/>
+    <EditText
+        android:id="@+id/my_password"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="315dp"
+        android:layout_marginStart="160dp"
+        android:background="@color/cardview_light_background"
+        android:inputType="textPassword"
+        android:autofillHints="@string/passw"
+        tools:ignore="LabelFor" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="370dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/passw2"
+        android:textSize="25sp"/>
+    <EditText
+        android:id="@+id/check_password"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="375dp"
+        android:layout_marginStart="160dp"
+        android:background="@color/cardview_light_background"
+        android:inputType="textPassword"
+        android:autofillHints="@string/passw2"
+        tools:ignore="LabelFor" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="430dp"
+        android:layout_marginStart="70dp"
+        android:text="@string/name"
+        android:textSize="25sp"/>
+    <EditText
+        android:id="@+id/my_name"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="435dp"
+        android:layout_marginStart="160dp"
+        android:background="@color/cardview_light_background"
+        android:autofillHints="@string/name" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="490dp"
+        android:layout_marginStart="70dp"
+        android:text="@string/btithd"
+        android:textSize="25sp"/>
+    <ImageButton
+        android:id="@+id/my_birth"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="495dp"
+        android:layout_marginStart="160dp"
+        android:src = "@drawable/callender_buttom"/>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="550dp"
+        android:layout_marginStart="70dp"
+    android:text="@string/bg"
+    android:textSize="25sp"/>
+    <CheckBox
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="555dp"
+        android:layout_marginStart="160dp"
+        android:text="@string/i_boy"
+        android:textSize="20sp"/>
+    <CheckBox
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="555dp"
+        android:layout_marginStart="260dp"
+        android:text="@string/i_girl"
+        android:textSize="20sp"/>
+    <ImageButton
+        android:id = "@+id/go_to_register"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="620dp"
+        android:layout_marginEnd="260dp"
+        android:layout_marginBottom="140dp"
+        android:contentDescription="@string/next"
+        android:src = "@drawable/next_buttom"/>
+    <ImageButton
+        android:id="@+id/go_back_login"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="620dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="140dp"
+        android:src = "@drawable/last_button"
+        android:contentDescription="last" />
+
+
+</FrameLayout>
