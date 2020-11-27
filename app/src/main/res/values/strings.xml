@@ -74,6 +74,8 @@
     <string name="illness12">腸道傳染病</string>
     <string name="illness13">流行性感冒</string>
     <string name="illness14">痔瘡</string>
+    <string name="i_agree">我已經閱讀並且同意</string>
+    <string name="title">老管家服務條款</string>
     <!--
     This string is used for square devices and overridden by hello_world in
     values-round/strings.xml for round devices.

@@ -3,12 +3,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".register_service">
-
-    <!-- TODO: Update blank fragment layout -->
+    tools:context=".register_service"
+    android:background="@color/bkgd_yellow">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="50dp"
+        android:background="#ffdca6"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/title"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="180dp"
+        android:textSize="20sp"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:background="@color/cardview_light_background"
+        />
+    <CheckBox
+        android:id = "@+id/i_agree_the_sevice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="570dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="130dp"
+        android:text="@string/i_agree"
+        android:textSize="20sp"/>
+    <ImageButton
+        android:id = "@+id/go_to_register"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="620dp"
+        android:layout_marginEnd="260dp"
+        android:layout_marginBottom="140dp"
+        android:contentDescription="@string/next"
+        android:src = "@drawable/next_buttom"/>
+    <ImageButton
+        android:id="@+id/go_back_login"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="620dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="140dp"
+        android:src = "@drawable/cacel_buttom"/>
+
+
 
 </FrameLayout>
