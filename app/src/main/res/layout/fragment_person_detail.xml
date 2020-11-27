@@ -55,24 +55,50 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
+    <ImageView
+        android:id="@+id/bkgd_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="#ff3366"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/general_person_tv"
-
-
+    <ImageView
+        android:id="@+id/persondetail_information_iv"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginStart="63dp"
-        android:layout_marginTop="173dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:textSize="24sp"
-        android:background="@android:drawable/sym_contact_card"
-        android:text="老王"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="302dp" />
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/bkgd_view"
+        app:layout_constraintTop_toTopOf="@+id/bkgd_view"
+        android:src="@drawable/wu" />
+
+    <ImageView
+        android:id="@+id/persondetail_record_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/bkgd_view"
+        app:layout_constraintTop_toTopOf="@+id/bkgd_view"
+        app:srcCompat="@drawable/activity" />
+
+    <ImageView
+        android:id="@+id/persondetail_goout_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/bkgd_view"
+        app:layout_constraintTop_toBottomOf="@+id/persondetail_information_iv"
+        app:srcCompat="@android:drawable/stat_notify_sync_noanim" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

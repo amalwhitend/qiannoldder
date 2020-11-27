@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/oldnavigation"
-    app:startDestination="@id/desktopFragment">
+    app:startDestination="@id/chooseModeFragment">
 
     <fragment
         android:id="@+id/desktopFragment"
@@ -53,4 +53,49 @@
         android:id="@+id/favorFragment"
         android:name="com.example.myapp.old.general.favorFragment"
         android:label="favorFragment" />
+    <fragment
+        android:id="@+id/generalFragment"
+        android:name="com.example.myapp.old.general.GeneralFragment"
+        android:label="GeneralFragment" >
+        <action
+            android:id="@+id/action_generalFragment_to_personDetailFragment"
+            app:destination="@id/personDetailFragment"
+            >
+            <argument
+                android:name="person"
+                android:defaultValue="who am i"
+                app:argType="string" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/chooseModeFragment"
+        android:name="com.example.myapp.old.login.chooseModeFragment"
+        android:label="fragment_choose_mode"
+        tools:layout="@layout/fragment_choose_mode" >
+        <action
+            android:id="@+id/action_chooseModeFragment_to_generalFragment"
+            app:destination="@id/generalFragment" />
+        <action
+            android:id="@+id/action_chooseModeFragment_to_desktopFragment"
+            app:destination="@id/desktopFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personDetailFragment"
+        android:name="com.example.myapp.old.general.personDetailFragment"
+        android:label="personDetailFragment" >
+        <action
+            android:id="@+id/action_personDetailFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+        <action
+            android:id="@+id/action_personDetailFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.myapp.old.general.HistoryFragment"
+        android:label="HistoryFragment" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.myapp.old.general.infoFragment"
+        android:label="infoFragment" />
 </navigation>

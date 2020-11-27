@@ -1,10 +1,10 @@
-package com.example.myapp.old.general;
+package com.example.myapp.old.login;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.Button;
 
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
@@ -13,10 +13,10 @@ import com.example.myapp.old.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link GeneralFragment#newInstance} factory method to
+ * Use the {@link chooseModeFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class GeneralFragment extends Fragment {
+public class chooseModeFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -27,7 +27,7 @@ public class GeneralFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public GeneralFragment() {
+    public chooseModeFragment() {
         // Required empty public constructor
     }
 
@@ -37,11 +37,11 @@ public class GeneralFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment GeneralFragment.
+     * @return A new instance of fragment chooseModeFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static GeneralFragment newInstance(String param1, String param2) {
-        GeneralFragment fragment = new GeneralFragment();
+    public static chooseModeFragment newInstance(String param1, String param2) {
+        chooseModeFragment fragment = new chooseModeFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -62,12 +62,16 @@ public class GeneralFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_general, container, false);
-        TextView persontextView = view.findViewById(R.id.general_person_tv);
-        String person = persontextView.getText().toString();
+        View view = inflater.inflate(R.layout.fragment_choose_mode, container, false);
+        Button generalbtn = view.findViewById(R.id.choosemode_generalbtn);
+        Button easybtn =  view.findViewById(R.id.choosemode_easybtn);
 
-                persontextView.setOnClickListener(view1 -> {
-            Navigation.findNavController(view).navigate(GeneralFragmentDirections.actionGeneralFragmentToPersonDetailFragment());
+        generalbtn.setOnClickListener(view1 -> {
+            Navigation.findNavController(view).navigate(chooseModeFragmentDirections.actionChooseModeFragmentToGeneralFragment());
+        });
+        easybtn.setOnClickListener(view1 -> {
+            Navigation.findNavController(view).navigate(chooseModeFragmentDirections.actionChooseModeFragmentToDesktopFragment());
+
         });
         return view;
     }
