@@ -1,22 +1,20 @@
-package com.example.myapp.old.desktop;
+package com.example.myapp.old.general;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 import androidx.fragment.app.Fragment;
-import androidx.navigation.Navigation;
 
 import com.example.myapp.old.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link attendGoOutFragment#newInstance} factory method to
+ * Use the {@link infoFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class attendGoOutFragment extends Fragment {
+public class infoFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -27,13 +25,11 @@ public class attendGoOutFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public attendGoOutFragment() {
+    public infoFragment() {
         // Required empty public constructor
     }
-
-    // TODO: Rename and change types and number of parameters
-    public static attendGoOutFragment newInstance(String param1, String param2) {
-        attendGoOutFragment fragment = new attendGoOutFragment();
+    public static infoFragment newInstance(String param1, String param2) {
+        infoFragment fragment = new infoFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -54,11 +50,13 @@ public class attendGoOutFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_attend_go_out, container, false);
-        Button attendgoout_attend_btn = view.findViewById(R.id.attend_goout_startout_btn);
-        attendgoout_attend_btn.setOnClickListener(view1 -> {
-            Navigation.findNavController(view).navigate(attendGoOutFragmentDirections.actionAttendGoOutFragmentToFavorFragment());
-        });
+        View view =inflater.inflate(R.layout.fragment_info, container, false);
+//        view.findViewById(R.id.info_nextstepbtn).setOnClickListener(v->{
+//            Navigation.findNavController(v).navigate(R.id.action_InfoFragment2_to_FavorFragment2);
+//        });
+//        view.findViewById(R.id.edit).setOnClickListener(v->{
+//            Navigation.findNavController(v).navigate(R.id.action_InfoFragment2_to_FavorFragment2);
+//        });
         return view;
     }
 }

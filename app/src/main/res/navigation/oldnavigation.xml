@@ -39,10 +39,18 @@
         android:id="@+id/attendGoOutFragment"
         android:name="com.example.myapp.old.desktop.attendGoOutFragment"
         android:label="fragment_attend_go_out"
-        tools:layout="@layout/fragment_attend_go_out" />
+        tools:layout="@layout/fragment_attend_go_out" >
+        <action
+            android:id="@+id/action_attendGoOutFragment_to_favorFragment"
+            app:destination="@id/favorFragment" />
+    </fragment>
     <fragment
         android:id="@+id/detailActivitiesFragment"
         android:name="com.example.myapp.old.desktop.detailActivitiesFragment"
         android:label="fragment_detail_activities"
         tools:layout="@layout/fragment_detail_activities" />
+    <fragment
+        android:id="@+id/favorFragment"
+        android:name="com.example.myapp.old.general.favorFragment"
+        android:label="favorFragment" />
 </navigation>

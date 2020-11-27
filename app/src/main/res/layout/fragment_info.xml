@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFC75A">
+
+    <ImageView
+        android:id="@+id/info"
+
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="69dp"
+        android:background="@drawable/info_pic"
+        android:contentDescription="@string/todo"
+        android:radius="90dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/info_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="0dp"
+        android:text="基本資料"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/phonenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="227dp"
+        android:text="電話"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="226dp"
+        android:text="0922333444"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="282dp"
+        android:text="姓名"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/thename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="284dp"
+        android:text="崔金磊"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/birth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="333dp"
+        android:text="生日"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/thebirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="333dp"
+        android:text="1960 年 05 月 01 日"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/sexual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="388dp"
+        android:text="性別"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/thesexual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="388dp"
+        android:text="男"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/relation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="439dp"
+        android:text="關係"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/therelation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="440dp"
+        android:text="親戚"
+        android:textSize="25sp" />
+
+    <ImageButton
+        android:id="@+id/edit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="365dp"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/pen"
+        android:textSize="25sp"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="489dp"
+        android:text="電子信箱"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/info_laststepbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="555dp"
+        android:background="#979797"
+        android:text="@string/laststep"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:backgroundTint="#878282" />
+
+    <Button
+        android:id="@+id/info_nextstepbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="555dp"
+        android:background="#979797"
+        android:text="@string/nextstep"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:backgroundTint="#CE0000" />
+
+</RelativeLayout>

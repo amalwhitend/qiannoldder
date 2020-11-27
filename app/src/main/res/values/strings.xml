@@ -1,7 +1,57 @@
 <resources>
     <string name="app_name">Old</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <!-- TODO: Remove or change this placeholder text -->
-
+    <string name="illness">疾病史</string>
+    <string name="depress">抑鬱症</string>
+    <string name="recognization">認知障礙症</string>
+    <string name="sugarill">糖尿病</string>
+    <string name="highpress">高血壓</string>
+    <string name="headheart">冠心病</string>
+    <string name="midwind">中風</string>
+    <string name="chronic">慢性阻塞性氣管病</string>
+    <string name="pakinshen">柏金遜症</string>
+    <string name="decay">腎衰竭</string>
+    <string name="bonelost">骨質疏鬆</string>
+    <string name="lowtemp">低溫症</string>
+    <string name="menular">腸道傳染病</string>
+    <string name="flu">流行性感冒</string>
+    <string name="ass">疥瘡</string>
+    <string name="finsih">完成</string>
+    <string name="position">位 置</string>
+    <string name="goout">出 門</string>
+    <string name="old">長者資訊</string>
+    <string name="goodkeeper">郝冠嘉</string>
+    <string name="act">活動</string>
+    <string name="human">志工</string>
+    <string name="home">首頁</string>
+    <string name="notify">通知</string>
+    <string name="schedule">行事曆</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="blank_fragment">blank_fragment</string>
+    <string name="historyrecord">歷史紀錄</string>
+    <string name="username">郝冠嘉</string>
+    <string name="todo">TODO</string>
+    <string name="nextstep">下一步</string>
+    <string name="laststep">上一步</string>
+    <string name="people">義 工</string>
+    <string name="favor">興趣愛好</string>
+    <string name="wtf">體 操</string>
+    <string name="walk">散 步</string>
+    <string name="hiking">登 山</string>
+    <string name="ball">球 類</string>
+    <string name="flowering">園 藝</string>
+    <string name="fishing">釣 魚</string>
+    <string name="chess">下 棋</string>
+    <string name="travel">旅 遊</string>
+    <string name="ink">書法</string>
+    <string name="painting">繪 畫</string>
+    <string name="dancing">舞 蹈</string>
+    <string name="title_activity_general">GeneralActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
 </resources>
